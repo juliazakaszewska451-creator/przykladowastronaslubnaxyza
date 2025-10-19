@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #faf7f5;
+  color: #3a2a26;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6b2d37;
+  color: white;
+  padding: 80px 20px;
+  background-image: url('https://images.unsplash.com/photo-1504203700686-0b6a8d5e7f5a?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+}
+
+header p {
+  font-size: 1.3em;
+  margin: 10px 0 0;
+}
+
+.language-switch {
+  margin-top: 20px;
+}
+
+.language-switch button {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.language-switch button:hover {
+  background-color: rgba(255,255,255,0.4);
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #6b2d37;
+  margin-bottom: 10px;
+}
+
+.accent {
+  color: #a0404a;
+  font-weight: bold;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6b2d37;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+a.button:hover {
+  background-color: #a0404a;
+}
+
+footer {
+  background-color: #f5ebe8;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+img.rounded {
+  border-radius: 12px;
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
