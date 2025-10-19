@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Ślub Oli i Dmytro 💍</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Ola ❤️ Dmytro — Zaproszenie</title>
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-  <header>
-    <h1 id="title">Ola 💕 Dmytro</h1>
-    <p id="subtitle">Zapraszamy na nasz ślub!</p>
 
-    <div class="language-switch">
-      <button onclick="setLanguage('pl')">🇵🇱 PL</button>
-      <button onclick="setLanguage('ua')">🇺🇦 UA</button>
-      <button onclick="setLanguage('ru')">🇷🇺 RU</button>
-    </div>
-  </header>
 
-  <section id="details">
-    <h2 data-key="details_title">📅 Szczegóły uroczystości</h2>
-    <p><span class="accent" data-key="date_label">Data:</span> <span data-key="date_text">12 lipca 2025</span></p>
-    <p><span class="accent" data-key="ceremony_label">Ceremonia:</span> <span data-key="ceremony_text">Kościół św. Anny, Kraków</span></p>
-    <p><span class="accent" data-key="reception_label">Przyjęcie:</span> <span data-key="reception_text">Dworek Boho, ul. Kwiatowa 7</span></p>
-    <img src="https://images.unsplash.com/photo-1529676468690-953d3f4d7d4d?auto=format&fit=crop&w=1000&q=80" class="rounded" alt="Boho wedding">
-  </section>
+<!-- HERO -->
+<header id="hero">
+<div class="overlay"></div>
+<div class="hero-inner">
+<h1 id="hero-title">Ola ❤️ Dmytro</h1>
+<p id="hero-sub">Zapraszamy na nasz ślub — 12 lipca 2025</p>
+<div class="lang-switch">
+<button onclick="setLanguage('pl')">🇵🇱 PL</button>
+<button onclick="setLanguage('ua')">🇺🇦 UA</button>
+<button onclick="setLanguage('ru')">🇷🇺 RU</button>
+</div>
+</div>
+</header>
 
-  <section id="rsvp">
-    <h2 data-key="rsvp_title">💌 Potwierdzenie przybycia</h2>
-    <p data-key="rsvp_text">Prosimy o potwierdzenie obecności do 15 czerwca 2025.</p>
-    <a href="https://formspree.io/f/your-form-id" class="button" data-key="rsvp_button">Potwierdź obecność</a>
-  </section>
 
-  <section id="gallery">
-    <h2 data-key="gallery_title">📸 Galeria wspomnień</h2>
-    <p data-key="gallery_text">Po ślubie zapraszamy do wspólnej galerii zdjęć:</p>
-    <a href="https://drive.google.com/drive/folders/twoj-link" target="_blank" class="button" data-key="gallery_button">Zobacz / dodaj zdjęcia</a>
-  </section>
+<!-- CONTENT -->
+<main>
 
-  <section id="about">
-    <h2 data-key="about_title">🇵🇱🇺🇦 O nas</h2>
-    <p data-key="about_text">
-      Nasz ślub to spotkanie dwóch kultur — polskiej i ukraińskiej.  
-      Chcemy podzielić się z Wami radością, muzyką i smakiem obu tradycji.  
-      Dziękujemy, że jesteście częścią naszego dnia ❤️
-    </p>
-  </section>
 
-  <footer>
-    <p>© 2025 Ola i Dmytro | Stworzone z miłością 💍</p>
-  </footer>
+<section class="card" id="details">
+<h2 data-key="details_title">📅 Szczegóły uroczystości</h2>
+<p><strong data-key="date_label">Data:</strong> <span data-key="date_text">12 lipca 2025</span></p>
+<p><strong data-key="ceremony_label">Ceremonia:</strong> <span data-key="ceremony_text">Kościół św. Anny, Kraków</span></p>
+<p><strong data-key="reception_label">Przyjęcie:</strong> <span data-key="reception_text">Dworek Boho, ul. Kwiatowa 7</span></p>
+<img class="photo" src="https://images.unsplash.com/photo-1504203700686-0b6a8d5e7f5a?auto=format&fit=crop&w=1200&q=80" alt="boho wedding">
+</section>
 
-  <script src="script.js"></script>
+
+<section class="card" id="rsvp">
+<h2 data-key="rsvp_title">💌 Potwierdzenie przybycia</h2>
+<p data-key="rsvp_text">Prosimy o potwierdzenie obecności do 15 czerwca 2025.</p>
+<!-- zamień href na swój Formspree lub inny formularz -->
+<a id="rsvp-button" class="btn" href="https://formspree.io/f/your-form-id" target="_blank" data-key="rsvp_button">Potwierdź obecność</a>
+</section>
+
+
+<section class="card" id="gallery">
+<h2 data-key="gallery_title">📸 Galeria wspomnień</h2>
+<p data-key="gallery_text">Po ślubie zapraszamy do wspólnego folderu ze zdjęciami.</p>
+<a class="btn" id="gallery-button" href="https://drive.google.com/drive/folders/your-drive-link" target="_blank" data-key="gallery_button">Zobacz / dodaj zdjęcia</a>
+</section>
+
+
+<section class="card" id="about">
+<h2 data-key="about_title">🇵🇱🇺🇦 O nas</h2>
+<p data-key="about_text">Nasz ślub to spotkanie dwóch kultur — polskiej i ukraińskiej. Dziękujemy, że jesteście z nami.</p>
+</section>
+
+
+<section class="card" id="funfacts">
+<h2 data-key="fun_title">✨ Ciekawostki</h2>
+<ul>
+<li data-key="fun_1">Na stole będą i pierogi, i borszcz — połączenie smaków!</li>
+<li data-key="fun_2">Będzie dwujęzyczna wersja "Sto lat" 🎶</li>
+<li data-key="fun_3">Pan młody próbuje ukraińskich tańców — bądźcie gotowi 😉</li>
+</ul>
+</section>
+
+
+</main>
+
+
+<footer>
+<p>© 2025 Ola i Dmytro — stworzone z miłością</p>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
